@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
+    android:background="@drawable/gradient_regdesp"
+    tools:context=".FamVersion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/bg_criarcontafin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_famVersio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="35dp"
+            android:gravity="center"
+            android:text="A Family Version da TYE permite ao utilizador criar a sua família e visualizar todos os movimentos registados na aplicação por cada membro, de uma centralizada e sincronizada, através do nosso website."
+            android:textAlignment="center"
+            android:textColor="@color/BlackColor"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txt_natureza"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Natureza do membro da família:"
+            android:textAlignment="center"
+            android:textColor="@color/BlackColor"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_moderador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Moderador"
+                android:textSize="25dp" />
+
+            <RadioButton
+                android:id="@+id/rb_membro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Membro"
+                android:textSize="25dp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txt_codigo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="35dp"
+            android:gravity="center"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/BlackColor"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_gerarCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginBottom="25dp"
+            android:text="Gerar Código"
+            android:background="@drawable/gradient2"
+            android:textColor="@color/WhiteColor"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_aderirFV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginBottom="25dp"
+            android:text="Aderir"
+            android:background="@drawable/gradient2"
+            android:textColor="@color/WhiteColor"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
